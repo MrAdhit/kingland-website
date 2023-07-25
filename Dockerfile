@@ -7,7 +7,7 @@ COPY . .
 
 RUN cargo build --release
 
-ENTRYPOINT [ "/target/release/kingland-website" ]
+ENTRYPOINT [ "target/release/kingland-website" ]
 
 EXPOSE 80/tcp
 EXPOSE 443/tcp
