@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Kingland</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon?t=apple" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon?t=favicon16" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon?t=favicon32" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kingland.id/" />
+        <meta property="og:title" content="Kingland" />
+        <meta property="og:description" content="Minecraft Vanilla Survival Server" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
+        <style>
+            body {
+                margin: 0;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #f7b900;
+                overflow: hidden;
+            }
+
+            #logo {
+                margin-top: -15vh;
+            }
+
+            #title {
+                font-weight: 900;
+                font-size: 80px;
+                margin: 0;
+                color: #fff;
+                user-select: none;
+                overflow: hidden;
+            }
+
+            /* #title::before {
+                content: "👑";
+                transition: all 500ms;
+                opacity: 0%;
+            }
+
+            #title:hover::before {
+                opacity: 100%;
+            }
+
+            #title::after {
+                content: "👑";
+                transition: all 500ms;
+                opacity: 0%;
+            }
+
+            #title:hover::after {
+                opacity: 100%;
+            } */
+
+            @media only screen and (max-width: 630px) {
+                #title {
+                    font-size: 70px;
+                }
+
+                #title::before {
+                    content: "";
+                }
+
+                #title::after {
+                    content: "";
+                }
+            }
+
+            @keyframes slow-in {
+                0% {
+                    opacity: 0%;
+                }
+                100% {
+                    opacity: 100%;
+                }
+            }
+
+            #description {
+                font-weight: 500;
+                font-size: 25px;
+                user-select: none;
+                text-align: center;
+            }
+
+            #soon {
+                user-select: none;
+                font-family: "Prompt", sans-serif;
+                font-weight: 900;
+                position: absolute;
+                font-size: 15vw;
+                z-index: -100;
+                opacity: 20%;
+                transform: translateY(100vh);
+                animation: slide 5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+            }
+
+            @keyframes slide {
+                0% {
+                    transform: translateY(100vh);
+                }
+                50% {
+                    transform: translateY(0vh);
+                }
+                100% {
+                    transform: translateY(-100vh);
+                }
+            }
+
+            a {
+                font-family: "Prompt", sans-serif;
+                color: #fff;
+            }
+
+            span,
+            p {
+                font-family: "Muli", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 1000 1000">
+                <defs>
+                    <clipPath id="b"><rect width="1000" height="1000" /></clipPath>
+                </defs>
+                <g id="a" clip-path="url(#b)">
+                    <path d="M1296.7,994.391v153.5L945.336,1499.245,594,1147.891v-153.5Z" transform="translate(-445 -499.245)" fill="#fff" />
+                    <path d="M0,401.078V247.568H702.708v153.51ZM549.188,153.51V0H702.7V153.51Zm-274.6,0V0H428.1V153.51ZM0,153.51V0H153.51V153.51Z" transform="translate(149)" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <div id="title">
+            <a href="https://discord.gg/PEsARGFup7">Kingland</a>
+        </div>
+        <span id="description">Minecraft Vanilla Survival Server</span>
+        <span id="soon">Coming Soon</span>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+[package]
+name = "kingland-website"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = { version = "1.0.0-rc.3", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+http-body-util = "0.1.0-rc.2"
+hyper-util = { git = "https://github.com/hyperium/hyper-util", version = "0.0.0", features = ["full"] }
+rustls = "0.21.5"
+rustls-pemfile = "1.0.3"
+tokio-rustls = "0.24.1"
