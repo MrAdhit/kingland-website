@@ -4,7 +4,7 @@ services:
         build: 
             dockerfile: Dockerfile
         ports:
-            - "34.101.127.126:80:80"
-            - "34.101.127.126:443:443"
+            - "80:80"
+            - "443:443"
         restart: "always"
         image: kingland-website
